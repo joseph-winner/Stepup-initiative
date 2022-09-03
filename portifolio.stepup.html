@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="./link.pages.css">
+    <title>Step-Up Youth Initiative</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/jpeg" href="./images/logo.png">
+</head>
+
+<body>
+
+    <header>
+       <!-- Nav bar -->
+    </header>
+    <main>
+        <section class="counter-section-area">
+            <div class="counter">
+                <div class="counter-cards">
+                    <i class="fa fa-smile-o"></i>
+                    <p class="happy-donar">
+                        1034
+                    </p>
+                    <h5>HAPPY DONATORS</h5>
+        
+                </div>
+        
+                <div class="counter-cards">
+                    <i class="fa fa-google-wallet"></i>
+                    <p class="success-mission">
+                        1034
+                    </p>
+                    <h5>SUCCESS MISSION</h5>
+        
+                </div>
+        
+                <div class="counter-cards">
+                    <i class="fa fa-user-plus"></i>
+                    <p class="voluteer">
+                        1034
+                    </p>
+                    <h5>VOLUNTEER REACHED</h5>
+        
+                </div>
+        
+                <div class="counter-cards">
+                    <i class="fa fa-globe"></i>
+                    <p class="globe-work">
+                        1034
+                    </p>
+                    <h5>GLOBALIZATION WORK</h5>
+        
+                </div>
+            </div>
+        </section>
+
+        <section class="sect-4">
+            <h2>OUR <span>VOLUTEERS</span></h2>
+            <div class="sect-4-head">
+                <span class="line-1"></span>
+                <img src="./images/logo.png" alt="">
+                <span class="line-2"></span>
+                <p class="not-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam adipisci labore aliquam <br>
+                    recusandae a corrupti explicabo beatae expedita quibusdam non.</p>
+            </div>
+            <div class="voluteer-small">
+                <a href="#">
+                    <img src="./images/voluteer-1.jpeg" alt=""></a>
+                <span>
+                    <a href="#">Join Our  Team <i class="fa fa-arrow-right"></i></a>
+                </span>
+            </div>
+            <div class="sect-voluteers">
+                <div class="voluteer">
+                    <img src="./images/voluteer.jpeg" alt="">
+                    <div class="vol-d">
+                        <p class="name">JACOB SENTONGO</p>
+                        <p class="voluteer-info not-dis">
+                            <p>Marketier</p>
+                            <p>+256777799991</p>
+
+                            <span class="vol-icons">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-envelope-o"></i></a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="voluteer">
+                    <img src="./images/voluteer.jpeg" alt="">
+                    <div class="vol-d">
+                        <p class="name">JACOB SENTONGO</p>
+                        <p class="voluteer-info not-dis">
+                            <p>Marketier</p>
+                            <p>+256777799991</p>
+
+                            <span class="vol-icons">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-envelope-o"></i></a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="voluteer">
+                    <img src="./images/voluteer.jpeg" alt="">
+                    <div class="vol-d">
+                        <p class="name">JACOB SENTONGO</p>
+                        <p class="voluteer-info not-dis">
+                            <p>Marketier</p>
+                            <p>+256777799991</p>
+
+                            <span class="vol-icons">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-envelope-o"></i></a>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+       
+
+        
+
+
+
+        <!-- FOOTER SECTION -->
+        <section class="my-footer">
+            <!-- FOOTER CONTENT -->
+        </section>
+    </main>
+    <script src="./link.page.js"></script>
+    <script src="./app.js"></script>
+    <script>
+        // COUNTER
+var donars = setInterval(happyDonars, 10);
+var mission = setInterval(successMission, 10);
+var voluteer = setInterval(voluteer, 10);
+var global = setInterval(global, 10);
+let count1 = 1;
+let count2 = 1;
+let count3 = 1;
+let count4 = 1;
+
+function happyDonars() {
+  count1++;
+  document.querySelector(".happy-donar").innerHTML = count1;
+  if (count1 == 300) {
+    clearInterval(donars);
+  }
+}
+
+function successMission() {
+  count2++;
+  document.querySelector(".success-mission").innerText = count2;
+  if (count2 == 300) {
+    clearInterval(mission);
+  }
+}
+
+function voluteer() {
+  count3++;
+  document.querySelector(".voluteer").innerText = count3;
+  if (count3 == 300) {
+    clearInterval(voluteer);
+  }
+}
+
+function global() {
+  count4++;
+  document.querySelector(".globe-work").innerText = count4;
+  if (count4 == 300) {
+    clearInterval(global);
+  }
+}
+    </script>
+</body>
+
+</html>

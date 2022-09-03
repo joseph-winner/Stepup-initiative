@@ -1,0 +1,248 @@
+<nav>
+    <div class="logo">
+        <img src="./images/logo.png" alt="Company Logo Here">
+        <p>Step Up Initiative</p>
+    </div>
+    <div class="nav-list">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.stepup.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Causes</a></li>
+            <li><a href="#">Events</a></li>
+            <select name="Services" id="Services">
+                <option value="Events" class="select-services">Services</option>
+                <option value="Initiatives" class="select-init">Initiatives</option>
+                <option value="Blogs" class="select-blog">Blogs</option>
+                <option value="Events" class="select-event">Events</option>
+            </select>
+        </ul>
+    </div>
+    <div class="jon-us">
+        <a href="./stepup/join.stepup.html">Join Us</a>
+    </div>
+    <div class="donate">
+        <a href="#">Donate</a>
+    </div>
+    <div class="humberger">
+        <span>
+            <i class="fa fa-bars"></i>
+        </span>
+    </div>
+</nav>
+<div class="sideNav">
+    <span class="openBtn">&times;</span>
+    <a href="./index.html">Home</a>
+    <a href="./about.stepup.html">About</a>
+    <a href="#">Contact</a>
+    <a href="#">Causes</a>
+    <a href="#">Events</a>
+    <select name="Services" id="Services">
+        <option value="Events">Services</option>
+        <option value="Initiatives">Initiatives</option>
+        <option value="Blogs">Blogs</option>
+        <option value="Events">Events</option>
+    </select>
+</div>
+
+
+
+
+<style>
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    nav .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+    .nav-list {
+        list-style: none;
+    }
+
+    .nav-list ul {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .nav-list ul li {
+        display: inline-block;
+        padding: 20px;
+    }
+
+    .nav-list ul li a {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    select {
+        border: none;
+        outline: none;
+        padding: 3px 5px;
+        font-size: 18px;
+        font-weight: 600;
+        border: 1px solid #ff00ff;
+        border-radius: 3px;
+    }
+
+    header .jon-us a {
+        color: #fff;
+    }
+
+    header .jon-us {
+        background-color: #ff00ff;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 4px 6px;
+        border-radius: 3px;
+    }
+
+    header .donate a {
+        color: #fff;
+    }
+
+    header .donate {
+        background-color: #ff00ff;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 4px 6px;
+        border-radius: 3px;
+    }
+
+    header .humberger {
+        font-size: 22px;
+        font-weight: 800;
+        border: 2px solid #111;
+        padding: 5px 8px;
+        border-radius: 5px;
+    }
+
+    /* HEADER SECTION ENDS NAV BAR */
+
+
+    /* SIDE NAV BAR STARTS HERE */
+
+    .sideNav {
+        display: block;
+        right: 0;
+        position: fixed;
+        width: 0px;
+        top: 0;
+        padding-top: 60px;
+        background-color: rgba(0, 0, 0, 0.73);
+        color: #fff;
+        height: 100vh;
+        z-index: 1000000;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+    }
+
+    .sideNav a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        margin: 30px 5px;
+    }
+
+    .sideNav select {
+        border: none;
+        text-align: center;
+        align-items: center;
+        margin: 20px 40px;
+        transform: translate(50%, -50%);
+    }
+
+    .openBtn {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        color: #fff;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    /* SIDE NAV BAR ENDS HERE */
+
+    @media(max-width:767px) {
+
+        .jon-us,
+        .donate {
+            display: none;
+        }
+
+        header {
+            height: 80px;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 15px;
+        }
+
+        header .humberger {
+            display: block;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        header .jon-us {
+            font-size: 14px;
+            font-weight: 600;
+            padding: 2px 4px;
+        }
+
+        header .donate {
+            font-size: 14px;
+            font-weight: 600;
+            padding: 2px 4px;
+        }
+
+        header img {
+            width: 70px;
+        }
+
+        nav .logo {
+            gap: 10px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .nav-list {
+            display: none;
+        }
+    }
+    @media(max-width:350px){
+        .logo p{
+            font-size: 24px;
+        }
+    }
+</style>
+
+<script>
+    // HUMBERGER
+    var openBtn = document.getElementsByClassName("humberger")[0];
+    openBtn.addEventListener("click", function () {
+        document.querySelector(".sideNav").style.width = "300px";
+    })
+    var closeBtn = document.querySelector(".openBtn");
+    closeBtn.addEventListener("click", function () {
+        document.querySelector(".sideNav").style.width = "0px";
+    })
+</script>
