@@ -13,7 +13,7 @@ const secValue = Math.floor(gap / 1000) % 60;
 const minValue = Math.floor(gap / 1000 / 60) % 60;
 const hourValue = Math.floor(gap / 1000 / 60 / 60 / 60);
 const dayValue = Math.floor(gap / 1000 / 60 / 60 / 24);
-console.log(secValue, minValue, hourValue, dayValue)
+// console.log(secValue, minValue, hourValue, dayValue)
 
 
 days.innerHTML = dayValue < 10 ? `0${dayValue}` : dayValue;
